@@ -8,7 +8,7 @@ lang: en-US
 timezone:  Europe/Istanbul
 #repo: https://github.com/onepase/Ephesus # site repo [optional]
 #google_verify:      XXX # Put your Google Verification here
-#google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
+google_analytics:   UA-291231147 # Put your Google Analytics code
 discus-identifier:  Reza
 
 # Author settings
