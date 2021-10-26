@@ -1,401 +1,395 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  
-
-  
-
-  <title>Tag Index</title>
-
-  
-  <meta name="author" content="Reza">
-  
-
-  <meta name="description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag...">
-
-  
-
-  
-  <meta name="keywords" content="netdevops,network,reznetdevops,keywords">
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-    
-      
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-    
-      
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-
-
-    
-      
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-
-    
-  
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
-    
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
-    
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  <meta property="og:site_name" content="RezNetDevOps">
-  <meta property="og:title" content="Tag Index">
-  <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag...">
-
-  
-  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.png">
-  
-
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/tags/">
-  <link rel="canonical" href="http://localhost:4000/tags/">
-  
-
-  
-  <meta name="twitter:card" content="summary">
-  
-  <meta name="twitter:site" content="@reznetdevops">
-  <meta name="twitter:creator" content="@reznetdevops">
-
-  <meta property="twitter:title" content="Tag Index">
-  <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag...">
-
-  
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.png">
-  
-
-  
-
-
-  
-
-  
-
-</head>
-
-
+<html lang="en-US" data-theme="light">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Tags - RezNetDevOps - NetDevOps by Reza</title>
+		<meta name="description" content="RezNetDevOps - NetDevOps by Reza">
+		<meta name="keywords" content="RezNetDevOps, blog">
+		<base href="http://localhost:4000" />
+		
+		<meta property="og:site_name" content="RezNetDevOps - NetDevOps by Reza">
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://localhost:4000/tags/"/>
+		<meta property="og:title" content="Tags - RezNetDevOps - NetDevOps by Reza" />
+		<meta property="og:description" content="RezNetDevOps - NetDevOps by Reza" />
+		<meta property="og:image" content="http://localhost:4000/assets/images/favicon.png"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta property="twitter:title" content="Tags - RezNetDevOps - NetDevOps by Reza" />
+		<meta property="twitter:description" content="RezNetDevOps - NetDevOps by Reza" />
+		<meta property="twitter:image" content="http://localhost:4000/assets/images/favicon.png" />
+		<link rel="stylesheet" href="assets/css/highlight.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="shortcut icon" href="assets/images/favicon.png" />
+		<link rel="alternate" type="application/atom+xml" title="RezNetDevOps - NetDevOps by Reza" href="http://localhost:4000/atom.xml">
+		<link rel="alternate" type="application/json" title="RezNetDevOps - NetDevOps by Reza" href="http://localhost:4000/feed.json" />
+		<link rel="sitemap" type="application/xml" title="sitemap" href="http://localhost:4000/sitemap.xml" />
+		<meta name="google-site-verification" content="" />
+	</head>
 <body>
+<div class="container">
+	<div class="profile">
+		<a href="http://localhost:4000"><img src="assets/images/profile.jpg" class="profile-image"></a>
+		<div class="profile-about">
+			<h2 style="margin-bottom: 0; font-weight: 700;">Reza Rezaei</h2>
+			
+			
+				<a href="https://twitter.com/reznetdevops" target="_blank"><img src="assets/images/icon/twitter.svg" class="social-icon"></a>
+			
+			
+				<a href="https://instagram.com/reznetdevops" target="_blank"><img src="assets/images/icon/instagram.svg" class="social-icon"></a>
+			
+			
+			
+				<a href="https://github.com/reznetdevops" target="_blank"><img src="assets/images/icon/github.svg" class="social-icon"></a>
+			
+			
+				<a href="https://linkedin.com/in/reznetdevops" target="_blank"><img src="assets/images/icon/linkedin.svg" class="social-icon"></a>
+			
+			<a href="about"><img src="assets/images/icon/me.svg" class="social-icon"></a>
+			<br>
+			Network Engineer <br> Microsoft sys/cloud admin <br> NetDevOps tools Engineer <br> CCNP Enterprise <br> MCSE Infra <br> MCSE Productivity
+			<br>
+			<div class="mode" id="mode-switcher" onclick="toggleNightMode();">
+				<span></span>
+			</div>
+		</div>
+	</div>
+	
 
-  
-
-
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">RezNetDevOps</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="main-navbar">
-    <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/aboutme">About Me</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" id="nav-search-link" href="#" title="Search">
-            <span id="nav-search-icon" class="fa fa-search"></span>
-            <span id="nav-search-text">Search</span>
-          </a>
-        </li></ul>
-  </div>
-
-  
-
-  
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        <a href="http://localhost:4000/">
-          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.png" />
-        </a>
-      </div>
-    </div>
-  
-
-</nav>
-
-
-
-<div id="beautifuljekyll-search-overlay">
-
-  <div id="nav-search-exit" title="Exit search">✕</div>
-  <input type="text" id="nav-search-input" placeholder="Search">
-  <ul id="search-results-container"></ul>
-  
-  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-  <script>
-    var searchjson = '[ \
-       \
-        { \
-          "title"    : "Sample blog post", \
-          "category" : "test", \
-          "url"      : "/2020-02-28-test-markdown/", \
-          "date"     : "February 28, 2020" \
-        }, \
-       \
-        { \
-          "title"    : "Flake it till you make it", \
-          "category" : "bookstest", \
-          "url"      : "/2020-02-26-flake-it-till-you-make-it/", \
-          "date"     : "February 26, 2020" \
-        }, \
-       \
-       \
-        { \
-          "title"    : "About me", \
-          "category" : "page", \
-          "url"      : "/aboutme/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
-        { \
-          "title"    : "My website", \
-          "category" : "page", \
-          "url"      : "/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
-        { \
-          "title"    : "Tag Index", \
-          "category" : "page", \
-          "url"      : "/tags/", \
-          "date"     : "January 1, 1970" \
-        } \
-       \
-    ]';
-    searchjson = JSON.parse(searchjson);
-
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('nav-search-input'),
-      resultsContainer: document.getElementById('search-results-container'),
-      json: searchjson
-    });
-  </script>
+<div class="w-100">
+	<h1>Tags in Blog</h1>
+	<div class="tags">
+		
+		
+			<a href="tags/#email" class="tag">email <span>(1)</span></a>
+		
+		
+			<a href="tags/#ephesus" class="tag">ephesus <span>(1)</span></a>
+		
+		
+			<a href="tags/#filter_var" class="tag">filter_var <span>(1)</span></a>
+		
+		
+			<a href="tags/#ipsum" class="tag">ipsum <span>(23)</span></a>
+		
+		
+			<a href="tags/#jekyll" class="tag">jekyll <span>(1)</span></a>
+		
+		
+			<a href="tags/#lorem" class="tag">lorem <span>(23)</span></a>
+		
+		
+			<a href="tags/#php" class="tag">php <span>(1)</span></a>
+		
+	</div>
 </div>
+<div class="post-container">
+	
+	
+	<h2 id="email">email</h2>
 
-
-
-
-
-  <!-- TODO this file has become a mess, refactor it -->
-
-
-
-
-
-
-
-<header class="header-section ">
-
-<div class="intro-header no-img">
-  <div class="container-md">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="page-heading">
-          <h1>Tag Index</h1>
-          
-
-          
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/email-address-format-php-filter-var-function-and-rfc-5321/">Email Address Format, PHP filter_var Function And RFC 5321</a>
+            <time datetime="2021-08-27T03:00:00+03:00" class="post-date">27.08.2021</time>
         </div>
-      </div>
-    </div>
-  </div>
+	
+	
+	
+	<h2 id="ephesus">ephesus</h2>
+
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ephesus-jekyll-blog-theme/">Ephesus Jekyll Blog Theme</a>
+            <time datetime="2021-09-22T03:00:00+03:00" class="post-date">22.09.2021</time>
+        </div>
+	
+	
+	
+	<h2 id="filter_var">filter_var</h2>
+
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/email-address-format-php-filter-var-function-and-rfc-5321/">Email Address Format, PHP filter_var Function And RFC 5321</a>
+            <time datetime="2021-08-27T03:00:00+03:00" class="post-date">27.08.2021</time>
+        </div>
+	
+	
+	
+	<h2 id="ipsum">ipsum</h2>
+
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ephesus-the-great-ancient-city/">Ephesus The Great Ancient City</a>
+            <time datetime="2021-09-21T03:00:00+03:00" class="post-date">21.09.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/elit-in-massa-parturient-a-class-condimentum-suspendisse/">Elit in massa parturient a class condimentum suspendisse.</a>
+            <time datetime="2021-09-11T03:00:00+03:00" class="post-date">11.09.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/binary-search-algorithm-c-programming-example/">Binary Search Algorithm - C Programming Example</a>
+            <time datetime="2021-08-19T03:00:00+03:00" class="post-date">19.08.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/posuere-sapien-orci-ipsum-dolor-parturient-eu-risus-in-orci/">Posuere sapien orci ipsum dolor parturient eu risus in orci.</a>
+            <time datetime="2021-07-28T03:00:00+03:00" class="post-date">28.07.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/vivamus-neque-nullam-ridiculus-posuere-placerat-parturient-ullamcorpernone/">Vivamus neque nullam ridiculus posuere placerat parturient ullamcorper</a>
+            <time datetime="2021-07-23T03:00:00+03:00" class="post-date">23.07.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/iaculis-hendrerit-nunc-duis-a-per-convallis-ac-scelerisque-tempus-commodonone/">Iaculis hendrerit nunc duis a per convallis ac scelerisque tempus commodo</a>
+            <time datetime="2021-06-19T03:00:00+03:00" class="post-date">19.06.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/nisl-a-ultricies-mus-nisi-enimnone/">Nisl a ultricies mus nisi enim</a>
+            <time datetime="2021-06-11T03:00:00+03:00" class="post-date">11.06.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/a-ultricies-class-sociosqu-elementum-a-dui-potentinone/">A ultricies class sociosqu elementum a dui potenti</a>
+            <time datetime="2021-05-29T03:00:00+03:00" class="post-date">29.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/enim-ad-hendrerit-elementum-molestie-nibh-cursus-ullamcorper-sodales-sit-tortornone/">Enim ad hendrerit elementum molestie nibh cursus ullamcorper sodales sit tortor</a>
+            <time datetime="2021-05-21T03:00:00+03:00" class="post-date">21.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ante-facilisis-litora-parturient-a-suspendisse-consectetur-imperdiet-pulvinar-ultriciesnone/">Ante facilisis litora parturient a suspendisse consectetur imperdiet pulvinar ultricies</a>
+            <time datetime="2021-05-19T03:00:00+03:00" class="post-date">19.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/lacus-consectetur-a-ultrices-aslienone/">Lacus consectetur a ultrices aslie</a>
+            <time datetime="2021-05-17T03:00:00+03:00" class="post-date">17.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/mi-adipiscing-condimentum-malesuada-congue-enim-etnone/">Mi adipiscing condimentum malesuada congue enim et</a>
+            <time datetime="2021-05-12T03:00:00+03:00" class="post-date">12.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/enim-vehicula-fringilla-ullamcorper-leo-habitant/">Enim vehicula fringilla ullamcorper leo habitant</a>
+            <time datetime="2021-04-24T03:00:00+03:00" class="post-date">24.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/integer-mi-sociis-et-scelerisque-at-disnone/">Integer mi sociis et scelerisque at dis</a>
+            <time datetime="2021-04-19T03:00:00+03:00" class="post-date">19.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ante-fames-netus-vel-vestibulum-himenaeos-dolor-habitant-eu-quisnone/">Ante fames netus vel vestibulum himenaeos dolor habitant eu quis</a>
+            <time datetime="2021-04-19T03:00:00+03:00" class="post-date">19.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/curabitur-placerat-a-volutpat-magna-luctus-tempus-est-tortornone/">Curabitur placerat a volutpat magna luctus tempus est tortor</a>
+            <time datetime="2021-04-16T03:00:00+03:00" class="post-date">16.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/mauris-a-viverra-parturient-consecteturnone/">Mauris a viverra parturient consectetur</a>
+            <time datetime="2021-04-15T03:00:00+03:00" class="post-date">15.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/natoque-hac-euismod-diam-conubia-parturientnone/">Natoque hac euismod diam conubia parturient</a>
+            <time datetime="2021-03-13T03:00:00+03:00" class="post-date">13.03.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/mattis-pulvinar-nam-vivamus-magna-tempus-primis-habitassenone/">Mattis pulvinar nam vivamus magna tempus primis habitasse</a>
+            <time datetime="2021-02-23T03:00:00+03:00" class="post-date">23.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ullamcorper-convallis-a-placerat-consectetur-condimentumnone/">Ullamcorper convallis a placerat consectetur condimentum</a>
+            <time datetime="2021-02-16T03:00:00+03:00" class="post-date">16.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/justo-imperdiet-condimentum-ad-cum-acanone/">Justo imperdiet condimentum ad cum aca</a>
+            <time datetime="2021-02-09T03:00:00+03:00" class="post-date">09.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/metus-vestibulum-id-vehicula-a-gravida-venenatis-potenti-ut-vehiculanone/">Metus vestibulum id vehicula a gravida venenatis potenti ut vehicula</a>
+            <time datetime="2021-02-07T03:00:00+03:00" class="post-date">07.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/aenean-lectus-consectetur/">Aenean lectus consectetur</a>
+            <time datetime="2021-01-29T03:00:00+03:00" class="post-date">29.01.2021</time>
+        </div>
+	
+	
+	
+	<h2 id="jekyll">jekyll</h2>
+
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ephesus-jekyll-blog-theme/">Ephesus Jekyll Blog Theme</a>
+            <time datetime="2021-09-22T03:00:00+03:00" class="post-date">22.09.2021</time>
+        </div>
+	
+	
+	
+	<h2 id="lorem">lorem</h2>
+
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ephesus-the-great-ancient-city/">Ephesus The Great Ancient City</a>
+            <time datetime="2021-09-21T03:00:00+03:00" class="post-date">21.09.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/elit-in-massa-parturient-a-class-condimentum-suspendisse/">Elit in massa parturient a class condimentum suspendisse.</a>
+            <time datetime="2021-09-11T03:00:00+03:00" class="post-date">11.09.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/binary-search-algorithm-c-programming-example/">Binary Search Algorithm - C Programming Example</a>
+            <time datetime="2021-08-19T03:00:00+03:00" class="post-date">19.08.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/posuere-sapien-orci-ipsum-dolor-parturient-eu-risus-in-orci/">Posuere sapien orci ipsum dolor parturient eu risus in orci.</a>
+            <time datetime="2021-07-28T03:00:00+03:00" class="post-date">28.07.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/vivamus-neque-nullam-ridiculus-posuere-placerat-parturient-ullamcorpernone/">Vivamus neque nullam ridiculus posuere placerat parturient ullamcorper</a>
+            <time datetime="2021-07-23T03:00:00+03:00" class="post-date">23.07.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/iaculis-hendrerit-nunc-duis-a-per-convallis-ac-scelerisque-tempus-commodonone/">Iaculis hendrerit nunc duis a per convallis ac scelerisque tempus commodo</a>
+            <time datetime="2021-06-19T03:00:00+03:00" class="post-date">19.06.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/nisl-a-ultricies-mus-nisi-enimnone/">Nisl a ultricies mus nisi enim</a>
+            <time datetime="2021-06-11T03:00:00+03:00" class="post-date">11.06.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/a-ultricies-class-sociosqu-elementum-a-dui-potentinone/">A ultricies class sociosqu elementum a dui potenti</a>
+            <time datetime="2021-05-29T03:00:00+03:00" class="post-date">29.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/enim-ad-hendrerit-elementum-molestie-nibh-cursus-ullamcorper-sodales-sit-tortornone/">Enim ad hendrerit elementum molestie nibh cursus ullamcorper sodales sit tortor</a>
+            <time datetime="2021-05-21T03:00:00+03:00" class="post-date">21.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ante-facilisis-litora-parturient-a-suspendisse-consectetur-imperdiet-pulvinar-ultriciesnone/">Ante facilisis litora parturient a suspendisse consectetur imperdiet pulvinar ultricies</a>
+            <time datetime="2021-05-19T03:00:00+03:00" class="post-date">19.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/lacus-consectetur-a-ultrices-aslienone/">Lacus consectetur a ultrices aslie</a>
+            <time datetime="2021-05-17T03:00:00+03:00" class="post-date">17.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/mi-adipiscing-condimentum-malesuada-congue-enim-etnone/">Mi adipiscing condimentum malesuada congue enim et</a>
+            <time datetime="2021-05-12T03:00:00+03:00" class="post-date">12.05.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/enim-vehicula-fringilla-ullamcorper-leo-habitant/">Enim vehicula fringilla ullamcorper leo habitant</a>
+            <time datetime="2021-04-24T03:00:00+03:00" class="post-date">24.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/integer-mi-sociis-et-scelerisque-at-disnone/">Integer mi sociis et scelerisque at dis</a>
+            <time datetime="2021-04-19T03:00:00+03:00" class="post-date">19.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ante-fames-netus-vel-vestibulum-himenaeos-dolor-habitant-eu-quisnone/">Ante fames netus vel vestibulum himenaeos dolor habitant eu quis</a>
+            <time datetime="2021-04-19T03:00:00+03:00" class="post-date">19.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/curabitur-placerat-a-volutpat-magna-luctus-tempus-est-tortornone/">Curabitur placerat a volutpat magna luctus tempus est tortor</a>
+            <time datetime="2021-04-16T03:00:00+03:00" class="post-date">16.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/mauris-a-viverra-parturient-consecteturnone/">Mauris a viverra parturient consectetur</a>
+            <time datetime="2021-04-15T03:00:00+03:00" class="post-date">15.04.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/natoque-hac-euismod-diam-conubia-parturientnone/">Natoque hac euismod diam conubia parturient</a>
+            <time datetime="2021-03-13T03:00:00+03:00" class="post-date">13.03.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/mattis-pulvinar-nam-vivamus-magna-tempus-primis-habitassenone/">Mattis pulvinar nam vivamus magna tempus primis habitasse</a>
+            <time datetime="2021-02-23T03:00:00+03:00" class="post-date">23.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/ullamcorper-convallis-a-placerat-consectetur-condimentumnone/">Ullamcorper convallis a placerat consectetur condimentum</a>
+            <time datetime="2021-02-16T03:00:00+03:00" class="post-date">16.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/justo-imperdiet-condimentum-ad-cum-acanone/">Justo imperdiet condimentum ad cum aca</a>
+            <time datetime="2021-02-09T03:00:00+03:00" class="post-date">09.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/metus-vestibulum-id-vehicula-a-gravida-venenatis-potenti-ut-vehiculanone/">Metus vestibulum id vehicula a gravida venenatis potenti ut vehicula</a>
+            <time datetime="2021-02-07T03:00:00+03:00" class="post-date">07.02.2021</time>
+        </div>
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/aenean-lectus-consectetur/">Aenean lectus consectetur</a>
+            <time datetime="2021-01-29T03:00:00+03:00" class="post-date">29.01.2021</time>
+        </div>
+	
+	
+	
+	<h2 id="php">php</h2>
+
+	
+	    <div class="post-list">
+            <a class="post-title" href="http://localhost:4000/email-address-format-php-filter-var-function-and-rfc-5321/">Email Address Format, PHP filter_var Function And RFC 5321</a>
+            <time datetime="2021-08-27T03:00:00+03:00" class="post-date">27.08.2021</time>
+        </div>
+	
+	
 </div>
-</header>
-
-
-
-
-
-<div class=" container-md " role="main">
-  <div class="row">
-    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
-      
-
-      <a href="#books" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;books&nbsp;(1)</a><a href="#test" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;test&nbsp;(2)</a><div id="full-tags-list"><h2 id="books" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;books&nbsp;(1)
-    </h2>
-    <div class="post-list"><div class="tag-entry">
-                <a href="/2020-02-26-flake-it-till-you-make-it/">Flake it till you make it</a>
-                <div class="entry-date">
-                    <time datetime="2020-02-26T00:00:00-05:00">February 26, 2020</time>
-                </div>
-            </div></div><h2 id="test" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;test&nbsp;(2)
-    </h2>
-    <div class="post-list"><div class="tag-entry">
-                <a href="/2020-02-28-test-markdown/">Sample blog post</a>
-                <div class="entry-date">
-                    <time datetime="2020-02-28T00:00:00-05:00">February 28, 2020</time>
-                </div>
-            </div><div class="tag-entry">
-                <a href="/2020-02-26-flake-it-till-you-make-it/">Flake it till you make it</a>
-                <div class="entry-date">
-                    <time datetime="2020-02-26T00:00:00-05:00">February 26, 2020</time>
-                </div>
-            </div></div></div>
-
-
-      
-
-      
-
-    </div>
-  </div>
+	<div class="footer">
+		<span>Made with <font color="red">♥</font> on Earth, a minimalist Jekyll Theme by <a href="https://hakan.io"><b>Hakan</b></a></span>
+	</div>
 </div>
+	<script src="assets/js/ephesus.js"></script>
+	<script type="text/javascript">
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.setAttribute('data-theme', 'dark');
+			document.getElementById('mode-switcher').classList.add('active');
+		}
+	</script>
 
-
-  <footer>
-  <div class="container-md beautiful-jekyll-footer">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-      <ul class="list-inline text-center footer-links"><li class="list-inline-item">
-    <a href="mailto:reznetdevops@gmail.com" title="Email me">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Email me</span>
-   </a>
-  </li><li class="list-inline-item">
-    <a href="https://t.me/NetDevOpsRez" title="Telegram">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Telegram</span>
-    </a>
-  </li><li class="list-inline-item">
-    <a href="https://github.com/reznetdevops" title="GitHub">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">GitHub</span>
-   </a>
-  </li><li class="list-inline-item">
-    <a href="https://twitter.com/reznetdevops" title="Twitter">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Twitter</span>
-   </a>
-  </li><li class="list-inline-item">
-    <a href="https://linkedin.com/in/reznetdevops" title="LinkedIn">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">LinkedIn</span>
-   </a>
-  </li><li class="list-inline-item">
-    <a href="https://www.instagram.com/reznetdevops" title="Instagram">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">Instagram</span>
-   </a>
-  </li></ul>
-
-      
-      <p class="copyright text-muted">
-      
-        Reza
-        &nbsp;&bull;&nbsp;
-      
-      2021
-
-      
-        &nbsp;&bull;&nbsp;
-        <span class="author-site">
-          <a href="http://localhost:4000/">RezNetDevOps.github.io</a>
-        </span>
-      
-
-      
-      </p>
-      <p class="theme-by text-muted">
-        Powered by
-        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-      </p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-  
-  
-    
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-
-
-  
-    
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-
-  
-    
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-  
-
-
-
-  
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-      <script src="/assets/js/beautifuljekyll.js"></script>
-    
-  
-
-
-
-
-
-
-
-
-
+	
 </body>
 </html>
