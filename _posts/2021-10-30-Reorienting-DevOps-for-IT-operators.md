@@ -8,7 +8,7 @@ categories: Theory
 tags: [netdevops,devops]
 ---
 
-I've read this article from Nick Russo and believe it is a complete and correct reference of the NetDevOps and applying software-oriented DevOps principles to IT ops for us as IT operators. So I want to share it in my blog. It orginally published in ["All Hands on Tech"](https://www.allhandsontech.com/it-ops/devops/devops-principles-for-it-operators/?utm_source=twitter&utm_medium=organic-social&utm_campaign=itdevops_tw).
+I've read this article from Nick Russo ( [Twitter](https://twitter.com/nickrusso42518)) and believe it is a complete and correct reference of the NetDevOps and applying software-oriented DevOps principles to IT ops for us as IT operators. So I want to share it in my blog. It orginally published in ["All Hands on Tech"](https://www.allhandsontech.com/it-ops/devops/devops-principles-for-it-operators/?utm_source=twitter&utm_medium=organic-social&utm_campaign=itdevops_tw).
 
 DevOps isn’t a new concept, and you’ve likely heard the term before. Most of the technical discussions, training material and real-life applications of DevOps principles revolve around software development and application deployment. Organizations want to deliver their applications faster, at lower cost and with higher quality. DevOps enables these organizations to do just that.
 
@@ -17,15 +17,15 @@ What about the rest of us who don’t develop applications for a living? This bl
 
 If you ask your favorite search engine about “DevOps principles,” you’ll find any number of answers, so I won’t attempt to offer pseudo-authoritative guidance on precisely what counts as a “DevOps principle.” Instead, let’s elevate the discourse by focusing on what I call the four pillars of DevOps because they are broad, timeless and indisputable.
 
-    1. Purpose: Identify the problem to be solved and any constraints that apply. Far too often, I’ve consulted for organizations that trip over their own shoelaces trying to “do DevOps” by adopting buzzwords and purchasing tools without a clear picture (or “target condition”) on their end state. I even worked with a client who claimed to have productized DevOps into a laptop, whatever that means. This customer remains without a clear DevOps strategy today, years later.
+  1. Purpose: Identify the problem to be solved and any constraints that apply. Far too often, I’ve consulted for organizations that trip over their own shoelaces trying to “do DevOps” by adopting buzzwords and purchasing tools without a clear picture (or “target condition”) on their end state. I even worked with a client who claimed to have productized DevOps into a laptop, whatever that means. This customer remains without a clear DevOps strategy today, years later.
 
-    2. People: The human aspect of DevOps has a few dimensions. At the top level, software developers and IT operators need to cooperate better: Blameless post-mortem analyses after outages; construction of test, development and production environments consistent with the requirements of the developers (and the business); and rapidly communicating real-time issues for analysis, repair and patch deployment.
+  2. People: The human aspect of DevOps has a few dimensions. At the top level, software developers and IT operators need to cooperate better: Blameless post-mortem analyses after outages; construction of test, development and production environments consistent with the requirements of the developers (and the business); and rapidly communicating real-time issues for analysis, repair and patch deployment.
 
 At a lower level, consider the human interactions within each group. The same behaviors just described can be applied to internal projects, such as team-level code reviews or IT infrastructure upgrades.
 
-    3. Process: At the heart of productivity improvement methodologies like Lean and the Theory of Constraints (TOC) lies the pursuit of the perfect process. The idea is to arrange the value-adding steps in the proper sequence to yield the desired result as specified by the customer. Non-value adding steps, such as transportation, storage and waiting in queues should be minimized. For both software developers and IT operators, this usually involves a continuous integration/continuous deployment (CI/CD) pipeline to automatically test, package and deploy applications. We’ll dig into this soon.
+  3. Process: At the heart of productivity improvement methodologies like Lean and the Theory of Constraints (TOC) lies the pursuit of the perfect process. The idea is to arrange the value-adding steps in the proper sequence to yield the desired result as specified by the customer. Non-value adding steps, such as transportation, storage and waiting in queues should be minimized. For both software developers and IT operators, this usually involves a continuous integration/continuous deployment (CI/CD) pipeline to automatically test, package and deploy applications. We’ll dig into this soon.
 
-    4. Tools: This is self-explanatory. You can’t implement DevOps without the right tools to accomplish the myriad of tasks involved. This tends to involve a source code repository, a pipeline framework with customizable stages, a notification or feedback system, and a monitoring system for metrics/telemetry collection. Pluralsight has a wide selection of courses covering various DevOps solutions ranging from cloud-based software-as-a-service offerings to traditional on-premises products.
+  4. Tools: This is self-explanatory. You can’t implement DevOps without the right tools to accomplish the myriad of tasks involved. This tends to involve a source code repository, a pipeline framework with customizable stages, a notification or feedback system, and a monitoring system for metrics/telemetry collection. Pluralsight has a wide selection of courses covering various DevOps solutions ranging from cloud-based software-as-a-service offerings to traditional on-premises products.
 
 Some organizations make the mistake of diving headfirst into learning about DevOps tools without having invested any time reviewing their business purpose, coaching their people or developing their processes. This is especially tempting for technologists who want to immediately get their hands dirty with the DevOps product du jour.
 
@@ -41,9 +41,9 @@ I want to zoom into “process” more than anything else because this is where 
 
 The pipeline starts when a developer commits code to the centralized source code repository (in the world of Git, a “git push” action). The communication between the pipeline service and the repository often relies on a webhook notification but could use a custom integration, depending on the products. When it comes to the test stage, a good first step is to perform **static code analysis** and refinement. This phase often includes the following:
 
-    1. Linting: Checking for syntax errors and styling transgressions
-    2. Security scanning: Looking for exploits and insecure code
-    3. Code formatting: Automatically changing the code to comply with standards and conventions
+  1. Linting: Checking for syntax errors and styling transgressions
+  2. Security scanning: Looking for exploits and insecure code
+  3. Code formatting: Automatically changing the code to comply with standards and conventions
 
 The beauty of static code analysis is that it doesn’t run the source code. It’s like holding a piece of paper at arm’s length and visually scanning for any obvious problems. As such, it finishes quickly and is low risk because any exploits in the code won’t be triggered.
 
@@ -64,9 +64,9 @@ Since IT operators aren’t deploying an application per se, what does the **dep
 
 In small environments, this might be a YAML or JSON file that identifies the correct state that a certain device should be in, for example:
 
-    Which VLANs should be on this switch?
-    Which users should have sudo access on a given workstation?
-    Which packages should be installed on this web server?
+  Which VLANs should be on this switch?
+  Which users should have sudo access on a given workstation?
+  Which packages should be installed on this web server?
 
 More complex environments may have a centralized database to store these values, like a single source of truth, but the concept is the same. Users can update the state declaration then initiate the CI/CD pipeline. This is commonly done using git push, just as it is in the software development world.
 ## Examples
