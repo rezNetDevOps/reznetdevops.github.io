@@ -3,7 +3,7 @@ title: "Reorienting DevOps for IT operators"
 date: 2021-10-30T00:00:00+00:00
 author: Reza Rezaei
 layout: post
-permalink: /reorienting-devops-for-it-operators/
+permalink: /Reorienting-Devops-for-IT-operators/
 categories: Theory
 tags: [netdevops,devops]
 ---
